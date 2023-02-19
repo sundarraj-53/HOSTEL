@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url("hostel.jpg");
+	background-size: cover;
+}
+
+.header_menu{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: transparent;
+	box-shadow: -2px -2px 20px -2px black; 
+}
+
+.logo h1{
+	color: white;
+	text-align: center;
+}
+
+.logo  a{
+	text-decoration: none;
+}
+.logo{
+	margin-left: 50px;
+}
+.logo::after{
+	content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:white;
+    transition: width .3s;
+}
+.logo:hover::after
+{
+    width: 100%;
+}
+
+.menu_list{
+	width: 80%;
+	text-align: right;
+	padding-right: 50px;
+
+}
+
+.menu_list li{
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	padding-left: 50px;
+	position: relative;
+	
+}
+
+.menu_list li a{
+	text-decoration: none;
+	color: white;
+    transition: all 1s;
+	
+}
+
+.menu_list li a:hover{
+	color:gray;
+}
+
+.childbar{
+	display: none;
+	transition: all 3s;
+	left:30px;
+}
+.menu_list ul li:hover .childbar{
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	padding-top: 20px;
+	
+	text-align: left;
+}
+.childbar ul li {
+	padding: 10px;
+}
+.header_content{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.header_content h2{
+	margin-bottom: 50px;
+	font-size: 17px;
+	font-weight: 200px;
+	letter-spacing: 0.3em;
+	color: white;
+}
+
+.header_content h1{
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-weight: 500px;
+	letter-spacing: 0.3em;
+	color: white;
+}
+
+.header_content button{
+	height: auto;
+	padding: 8px 37px;
+	font-size: 12px;
+	background: rgb(0,0,0,0.5);
+	margin-right: 20px;
+	border-radius: 3px;
+	border: 1px white solid;
+}
+
+.header_content button a{
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.cool::after{
+	content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:white;
+    transition: width .3s;
+}
+.cool:hover::after
+{
+    width: 100%;
+}
+
+
+
+
+

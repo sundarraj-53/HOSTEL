@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- CodingMaker-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!--CSS Style-->
+    <link rel="stylesheet" href="studentsignin.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="signin.js"></script>
+ </head>
+  <body> 
+    
+    <div class="box"> 
+        <div class="form">
+
+        <h2>Sign in </h2>
+    <form action="studentsignin.php" method="Post">
+        <div class="inputbox">
+          <input type="text" name="user" required="required" id="name" >
+          <span>Username </span>
+          <span id="pswd"></span>
+          <i></i>
+        </div>
+
+        <div class="inputbox">
+          <span id="pswdError"></span>
+            <input type="password" name="password" required="required" id="password">
+            <span id="pswdError">Password</span>
+            
+            <i></i>
+          </div>
+
+          <div class="links">
+            <a href="#"> Forgot Password</a>
+            <a href="studentsignup.html">Signup</a>
+          </div>
+          <input type="submit" name="save" button onclick="validate()" value="Login">
+    </form>
+    </div>
+  </div>
+  </body>
+</html>
